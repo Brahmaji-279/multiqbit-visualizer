@@ -342,7 +342,7 @@
         }
         // --- UI Event Listeners ---
         document.getElementById('add-qubit').addEventListener('click', () => {
-            if (numQubits < 5) { // Limit for performance
+            if (numQubits < 10) { // Limit for performance
                 numQubits++;
                 const newSize = Math.pow(2, numQubits);
                 const newState = new Array(newSize).fill(C_ZERO);
@@ -408,4 +408,5 @@
         updateUI();
     </script>
 </body>
+
 </html>
